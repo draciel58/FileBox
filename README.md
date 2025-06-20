@@ -14,7 +14,6 @@ This project is a full-stack application that allows users to upload, preview, d
 1. Navigate to the backend directory:
 
    ```
-   bash
    cd backend
    ```
 
