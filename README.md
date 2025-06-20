@@ -24,13 +24,15 @@ This project is a full-stack application that allows users to upload, preview, d
    npm install
    ```
 
-3. Create a .env file and configure your database:
+3. Create a .env file:
 
-    DB_HOST=localhost
-    DB_USER=root
-    DB_PASS=your_password
-    DB_NAME=file_system
+    ```
+    DB_HOST=
+    DB_USER=
+    DB_PASS=
+    DB_NAME=
     PORT=3001
+    ```
 
 4. Start the backend server:
 
@@ -46,13 +48,21 @@ Backend runs on: http://localhost:3001
 1. Navigate to the frontend directory:
 
     ```
-    cd client
+    cd frontend
     ```
 
 2. Install dependencies:
 
     ```
     npm install
+    ```
+
+3. Create a .env file:
+
+    ```
+    REACT_APP_SERVER_BASE_URL=
+    REACT_APP_ALLOWED_FILE_TYPES=
+    REACT_APP_MAX_FILE_SIZE=
     ```
 
 3. Start the frontend server:
@@ -82,25 +92,19 @@ CREATE TABLE files (
 📝 Actual file content is stored on disk (/uploads), while metadata is stored in the files table.
 
 
-🔧 Features
-Upload files (images, PDFs, videos, etc.)
+### 🔧 Features
+Upload files (images, PDFs etc.)
 
-Preview supported file types
+1. Preview supported file types
+2. Download files
+3. File metadata stored in MySQL
+4. Frontend styled using Material UI
+5. Error handling & validations
 
-Download files
+### 🛠 Tech Stack
 
-File metadata stored in MySQL
-
-Frontend styled using Material UI
-
-Error handling & validations
-
-🛠 Tech Stack
-Frontend: React, MUI
-
-Backend: Node.js, Express
-
-Database: MySQL
-
-File Upload: Multer
+1. Frontend: React, MUI
+2. Backend: Node.js, Express
+3. Database: MySQL
+4. File Upload: Multer
 
